@@ -1,0 +1,121 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            //font-style: italic;
+            font-weight:bold;
+            color:darkcyan;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        #g1{
+            background-color:beige;
+        }
+        a:hover{
+            background-color: black;
+            color:whitesmoke;
+            font-size: 40px;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            text-align: justify;
+            padding:10px;
+            line-height:40px;
+            text-transform: capitalize;
+            color:darkcyan;
+            
+        }
+        h3{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            text-align: center;
+            padding:10px;
+            line-height:40px;
+            text-transform: capitalize;
+            color:darkcyan;
+        }
+        .g2{
+            opacity:0.5;
+        }
+        .g2:hover{
+            opacity:1.0;
+            transition: 3s;
+            height:400px;
+            width:500px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 50px green;
+            //transform: rotate(360deg);
+            transform:skew(-40deg)
+        }
+        
+    </style>
+</head>
+<body>
+    <table  width="100%">
+        <tr height="40px" id="g1">
+            <td width="10%"><img src="{% static 'images/hlogo.jpg' %}" height="40px" width="100%"></td>
+            <td width="30%"><h1 style="text-align:center;font-size:20px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-transform: uppercase;
+                text-decoration: overline;word-spacing: 5px;
+            letter-spacing: 3px;color:darkcyan;text-shadow: 10px 10px 10px goldenrod;">HEART DISEASE PREDICTION</h1></td>
+            <td width="15%"><a href="index">Home</a></td>
+            <td width="15%"><a href="register">Register</a></td>
+            <td width="15%"><a href="login">Login</a></td>
+            <td width="15%"><a href="#">Prediction</a></td>
+        </tr>
+    </table>
+    <table  width="100%">
+        <tr height="600px">
+            <td width="100%"><img src="{% static 'images/hbb.jpg' %}" height="600px" width="100%"></td>
+        </tr>
+    </table>   
+    <table  width="100%">
+        <tr height="200px">
+            <td width="40%"><img src="{% static 'images/h1.jpg' %}" height="100%" width="100%"></td>
+            <td width="60%" id="g1"><p>Machine learning based lung cancer prediction models have been proposed to assist clinicians in managing incidental or screen detected indeterminate pulmonary nodules. Such systems may be able to reduce variability in nodule classification, improve decision making and ultimately reduce the number of benign nodules that are needlessly followed or worked-up. In this article, we provide an overview of the main lung cancer prediction approaches proposed to date and highlight some of their relative strengths and weaknesses. We discuss some of the challenges in the development and validation of such techniques and outline the path to clinical adoption.</p></td>
+        </tr>
+    </table> 
+    <table  width="100%">
+        <tr height="200px">
+            
+            
+    <td width="60%" ><p id="g1">A healthy diet and lifestyle are essential to maintaining a healthy heart. Alternative treatments and lifestyle changes can improve your heart health and reduce your risk of a heart attack. But it’s important to ensure that lifestyle changes don’t interfere with medications you may be taking. So always consult your doctor before trying any alternative treatments.</p></td>
+    <td width="40%"><img src="{% static 'images/h12.jpg' %}" height="200px" width="100%"></td>    
+</tr>
+    </table> 
+    <table  width="100%">
+        <tr height="300px">
+            <td width="25%"><img src="{% static 'images/h18.jpg' %}" class="g2" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h13.jpg' %}" class="g2" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h15.jpg' %}" class="g2" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h19.jpg' %}" class="g2" height="300px" width="100%"></td>
+        </tr>
+        <tr height="300px">
+            <td width="25%"><img src="{% static 'images/h14.jpg' %}" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h20.jpg' %}" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h21.jpg' %}" height="300px" width="100%"></td>
+            <td width="25%"><img src="{% static 'images/h22.jpg' %}" height="300px" width="100%"></td>
+        </tr>
+    </table> 
+    <table  width="100%">
+        <tr height="50px">
+            <td><h3>Copyrights @ 2022</h3></td>
+        </tr>
+    </table>
+</body>
+</html>
